@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: rgb(167, 225, 240);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 150px 1fr 120px; /* label — input — botón */
+  gap: 12px 20px;
+  align-items: center;
+}
+
+.btn-form {
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.form-grid label {
+  font-weight: bold;
+}
+
+.form-grid input {
+  padding: 6px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+input,
+button {
+  padding: 8px;
+  margin: 5px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tr.low-stock {
+  background: #ffe6e6;
+}
+
+button {
+  cursor: pointer;
+}
+
+#btnFinalizar {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#btnFinalizar:hover {
+  background-color: #27ae60;
+}
+
+.total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.edit-input {
+  width: 70px;
+}

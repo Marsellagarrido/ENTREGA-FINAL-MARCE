@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="tres.css">
+  <title>Inventario Interactivo</title>
+</head>
+
+<body>
+  <h1>Sistema de Inventario</h1>
+
+  <section class="card">
+    <h3>PRODUCTOS</h3>
+
+    <section class="form-grid">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" />
+      <section></section> <!-- Celda vacía para mantener alineación -->
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" id="cantidad" />
+      <button id="btnAgregar" class="btn-form">Agregar</button>
+      <label for="precio">Precio unitario:</label>
+      <input type="number" id="precio" />
+      <section></section> <!-- Celda vacía para mantener alineación -->
+    </section>
+  </section>
+
+  <section class="card">
+    <h3>Inventario</h3>
+
+    <table id="tabla">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Precio</th>
+          <th>Total</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <section class="total" id="totalGeneral">Total general: $0</section>
+  </section>
+
+  <script src="tres.js" defer></script>
+</body>
+
+</html>
